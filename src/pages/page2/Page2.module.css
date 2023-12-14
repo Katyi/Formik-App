@@ -1,0 +1,197 @@
+.container {
+  width: 900px;
+  /* height: 800px; */
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 24px;
+  background: var(--grey-0-white, #FFF);
+}
+.form {
+  margin-top: 25px;
+  margin-left: 110px;
+  margin-right: 110px;
+  display: flex;
+  flex-direction: column;
+}
+/* ARRAY */
+.arraTitle {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: var(--work-presets-text-white-mode-primary-g-800, #333);
+  font-family: TT Travels;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.col {
+  display: block;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.field {
+  font-family: TT Travels;
+  width: 300px;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid var(--black-alpha-alpha-16, rgba(0, 0, 0, 0.16));
+  background: var(--token-3-lvl-white-mode-modal-bg, #FFF);
+}
+.field::placeholder {
+  color: var(--black-alpha-alpha-48, rgba(0, 0, 0, 0.48));
+  font-family: TT Travels;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.arrayButton {
+  /* margin-top: 8px;
+  margin-bottom: 8px; */
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  /* outline: 1px solid transparent; */
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.img1 {
+  height: 44px;
+  width: 44px;
+}
+.img2 {
+  height: 20px;
+  width: 20px;
+}
+/* CHECKBOX */
+.checkboxTitle {
+  margin-top: 24px;
+  color: var(--work-presets-text-white-mode-primary-g-800, #333);
+  font-family: TT Travels;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.checkbox {
+  margin: 0;
+}
+.checkboxLabel {
+  margin-top: 0;
+  color: var(--work-presets-text-white-mode-primary-g-800, #333);
+  font-family: TT Travels;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* RADIO */
+.radioTitle {
+  margin-top: calc(24px - 12px);
+  color: var(--work-presets-text-white-mode-primary-g-800, #333);
+  font-family: TT Travels;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.radio {
+  margin: 0;
+  margin-top: 0;
+}
+.radioLabel {
+  color: var(--work-presets-text-white-mode-primary-g-800, #333);
+  font-family: TT Travels;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+}
+/* ERROR */
+.errorWrapper {
+  min-height: 12px;
+  margin-bottom: 3px;
+}
+.error {
+  color: red;
+  font-family: TT Travels;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
+/* BUTTONS */
+.buttonRow {
+  margin-top: calc(64px - 12px);
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nextButton, .backButton {
+  width: 83px;
+  height: 44px;
+  display: inline-flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: var(--purple-100, #5558FA);
+}
+.backButton {
+  background: transparent;
+  border: 1.5px solid var(--purple-100, #5558FA);
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 90vw;
+  }
+  .form {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 550px) {
+  .buttonRow {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .field {
+    width: 90%;
+  }
+}

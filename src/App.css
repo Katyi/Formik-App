@@ -1,0 +1,21 @@
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-layout-white, #F4F4F5);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body {
+  max-width: 100vw;
+  margin: 0 auto;
+  display: flex;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: local("TT Travels"),
+    url("./font/TT Travels Trial Regular.otf") format("truetype");
+}

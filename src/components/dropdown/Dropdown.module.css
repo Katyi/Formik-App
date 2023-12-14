@@ -1,0 +1,33 @@
+.select {
+  width: 425px;
+}
+.css-1jqq78o-placeholder {
+  color: red;
+}
+.css-4xgw5l-IndicatorsContainer2, span {
+  color: transparent;
+  width: 0;
+}
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 900px) {
+  
+}
+@media (max-width: 550px) {
+  .select {
+    width: calc(90%);
+  }
+  .form, .buttonRow {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .field {
+    width: 90%;
+  }
+  .select {
+    width: calc(90% + 24px);
+  }
+}

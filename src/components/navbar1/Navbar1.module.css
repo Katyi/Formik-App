@@ -1,0 +1,73 @@
+.container {
+  height: calc(129px - 50px) ;
+  width: calc(900px - 50px);
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  padding: 25px 24px;
+  gap: 24px;
+  border-bottom: 1px solid var(--black-alpha-alpha-8, rgba(0, 0, 0, 0.08));
+}
+.navbarRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.title {
+  color: var(--work-presets-text-white-mode-primary-g-800, #333);
+  font-family: TT Travels;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+.iconsRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.iconsCell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.subTitle {
+  color: var(--purple-100, #5558FA);
+  font-family: TT Travels;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .form {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+  }
+  .form, .buttonRow {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .field {
+    width: 90%;
+  }
+}
